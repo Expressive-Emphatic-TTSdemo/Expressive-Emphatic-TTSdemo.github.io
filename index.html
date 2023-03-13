@@ -1,156 +1,206 @@
-<html xmlns="http://www.w3.org/1999/html">
-  <head>
-    <meta charset="UTF-8">
-    <title>Audio samples for "EE-TTS: Emphatic Expressive TTS with Linguistic Information"</title>
-  </head>
-    <h2>Audio samples for "EE-TTS: Emphatic Expressive TTS with Linguistic Information"</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.88.1" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="./css/normalize.css">
+<link rel="stylesheet" href="./css/skeleton.css">
+<link rel="stylesheet" href="./css/custom.css">
+<link rel="alternate" href="index.xml" type="application/rss+xml" title="Speech Research">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+<title>EE-TTS: Emphatic Expressive TTS with Linguistic Information</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
 
 
-    <p><b>Authors: </b></p>
-
-    <p><u><b>FYI: Bold characters with a "^" symbol in the texts means the position should be emphasized </b></u> </p>
 
 
-  <br> </br>
+	</header>
 
-  <body>
-    <div>
-      <h3>Section I. Overall TTS Performance </h3>
-      <b>Section 1.1.</b> Emphasized speech samples of Baseline(with GT labels), EE-TTS(with GT labels), EE-TTS(with predict labels) and Ground Truth
-        <br> </br>
+	<main role="main">
+		<article itemscope itemtype="https://schema.org/BlogPosting">
+            <h1 class="entry-title" itemprop="headline">EE-TTS: Emphatic Expressive TTS with Linguistic Information</h1>
+			<section itemprop="entry-text">
+<h2 id="authors">Authors</h2>
+<h2 id="abstract">Abstract</h2>
+<p>While Current TTS systems perform well in synthesizing high-quality speech, producing highly expressive speech remains a challenge. Emphasis, as a critical factor in determining the expressiveness of speech, has attracted more attention nowadays. Previous works usually enhance the emphasis by adding intermediate features, but they can not guarantee the overall expressiveness of the speech. To resolve this matter, we propose Emphatic Expressive TTS (EE-TTS), which leverages multi-level linguistic information from syntax and semantics. EE-TTS contains an emphasis predictor that can identify appropriate emphasis positions from text and a conditioned acoustic model to synthesize expressive speech with emphasis and linguistic information. Experimental results indicate that EE-TTS outperforms baseline with MOS improvements of 0.49 and 0.67 in expressiveness and naturalness. EE-TTS also shows strong generalization across different datasets according to AB test results.</p>
+<h2>Audio Samples</h2>
+<h3><u>FYI: Bold characters with a "^" symbol in the texts means the position should be emphasized</u></h3>
+
+
+<h2>Section I. Overall Performance of EE-TTS</h2>
+
+<h3>Section 1.1. Comparison with GT and Baseline</h3>
+<p> Emphasized speechs of Baseline(with GT labels), EE-TTS(with GT labels), EE-TTS(with predict labels) and Ground Truth</p>
+
+
+
+<table>
+<thead>
+<tr>
+<th style="text-align: center">Baseline<br/>(GT emphasis labels)</th>
+<th style="text-align: center">EE-TTS<br/>(GT emphasis labels)</th>
+<th style="text-align: center">EE-TTS<br/>(Pred emphasis labels)</th>
+<th style="text-align: center">Ground Truth</th>
+
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td colspan="4"><span><em>mandarin text: &nbsp &nbsp &nbsp对面要难<b>受^</b>喽，怕是赶快<b>投^</b>了吧. <br/>
+mandarin pinyin: dui4 mian4 yao4 nan2 <b>shou4^</b> lou5, pa4 shi4 gan3 kuai4 <b>tou2^</b> le5 ba5.</em>
+</span></td>
+</tr>
+<tr>
+<td style="text-align: center"><audio controls style="width: 250px;" ><source src="samples/10023ol.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls style="width: 250px;"><source src="samples/10023proposed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls style="width: 250px;"><source src="samples/10023proposedgt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls style="width: 250px;"><source src="samples/10023gt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+
+</tr>
+</tbody>
+</table>
+<p><em>mandarin text: &nbsp &nbsp &nbsp这场比赛<b>一^定^</b>很精彩，期待你的英勇表现哦! <br/>
+          mandarin pinyin: zhe4 chang3 bi3 sai4 <b>yi2^ ding4^</b> hen3 jing1 cai3, qi1 dai4 ni3 de5 ying1 yong3 biao3 xian4 o5!</em></p>
+<table>
+<thead>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: center"><audio controls style="width: 250px;"><source src="samples/10043ol.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls style="width: 250px;"><source src="samples/10043proposed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls style="width: 250px;"><source src="samples/10043proposedgt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls style="width: 250px;"><source src="samples/10043gt.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody>
+</table>
+				<h3>Section 1.2. Generalization Test</h3>
+<p>Emphasized speech samples of EE-TTS and Baseline on another dataset F2</p>
+<p></p>
+<table>
+<thead>
+<tr>
+<th style="text-align: center">EE-TTS</th>
+<th style="text-align: center">Baseline</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td colspan="4"><span><em>mandarin text: &nbsp &nbsp &nbsp你们的答案<b>好^</b>奇怪，为什么会有<b>这^</b>么长的答案？<br/>
+	  mandarin pinyin: ni3 men5 de5 da2 an4 <b>hao3^</b> qi2 guai4, wei4 shen2 me5 hui4 you3 <b>zhe4^</b> me5 chang2 de5 da2 an4?</em>
+</span></td>
+</tr>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="samples/f22base1.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="samples/f22proposed.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+
+<td colspan="4"><span><em>mandarin text: &nbsp &nbsp &nbsp那我们来继续吧，我们来第<b>三^</b>个灯谜，请过来吧。<br/>
+          mandarin pinyin: na4 wo3 men5 lai2 ji4 xu4 ba5, wo3 men5 lai2 di4 <b>san1^</b> ge5 deng1 mi2, qing3 guo4 lai2 ba5.</em>
+</span></td>
+
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="samples/f22base2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="samples/f22ee2.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody>
+</table>
+
+<h2>Section II: Controllability Test</h2>
+<p>We also conduct a controllability test for EE-TTS to indicate the significance of emphasis control on different positions.</p>
+
     <table>
       <thead>
-        <tr>
-          <th align="center">Methods: </th>
-          <th align="center">Baseline<br/>(GT emphasis labels)</th>
-          <th align="center">EE-TTS<br/>(GT emphasis labels)</th>
-          <th align="center">EE-TTS<br/>(Pred emphasis labels)</th>
-          <th align="center">Ground Truth</th>
-
-        </tr>
-      <thead>
-      <tbody>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr>
-          <td colspan="5"><span>mandarin text: &nbsp &nbsp对面要难<b>受^</b>喽，怕是赶快<b>投^</b>了吧. <br/>
-          mandarin pinyin: dui4 mian4 yao4 nan2 <b>shou4^</b> lou5, pa4 shi4 gan3 kuai4 <b>tou2^</b> le5 ba5.
-          </td></span>
-        </tr>
-        <tr align="center">
-          <td>Speechs: </td>
-          <td><audio controls style="width: 300px;"><source src="samples/10023ol.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/10023proposed.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/10023proposedgt.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/10023gt.wav" type="audio/wav"></audio></td>
-        </tr>
-        <tr>
-          <td colspan="5"><span>mandarin text: &nbsp &nbsp这场比赛<b>一^定^</b>很精彩，期待你的英勇表现哦! <br/>
-          mandarin pinyin: zhe4 chang3 bi3 sai4 <b>yi2^ ding4^</b> hen3 jing1 cai3, qi1 dai4 ni3 de5 ying1 yong3 biao3 xian4 o5!
-          </td></span>
-        </tr>
-        <tr align="center">
-          <td>Speechs: </td>
-          <td><audio controls style="width: 300px;"><source src="samples/10043ol.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/10043proposed.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/10043proposedgt.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/10043gt.wav" type="audio/wav"></audio></td>
-        </tr>
-      </tbody>
-
-    </table>
-      <br> </br><b>Section 1.2.</b> Emphasized speech samples of EE-TTS and baseline, when generalizing to another dataset.<br> </br>
-
-    <table>
-      <thead>
-        <tr>
-          <th align="center">Methods: </th>
-          <th align="center">Baseline</th>
-          <th align="center">EE-TTS</th>
-        </tr>
-      <thead>
-      <tbody>
-        <tr></tr>
-        <tr></tr>
-        <tr></tr>
-        <tr>
-          <td colspan="3"><span>mandarin text: &nbsp &nbsp你们的答案<b>好^</b>奇怪，为什么会有<b>这^</b>么长的答案？<br/>
-          mandarin pinyin: ni3 men5 de5 da2 an4 <b>hao3^</b> qi2 guai4, wei4 shen2 me5 hui4 you3 <b>zhe4^</b> me5 chang2 de5 da2 an4?
-          </td></span>
-        </tr>
-        <tr align="center">
-          <td> Speechs: </td>
-          <td><audio controls style="width: 300px;"><source src="samples/f22base1.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/f22proposed.wav" type="audio/wav"></audio></td>
-        </tr>
-         <tr>
-          <td colspan="3"><span>mandarin text: &nbsp &nbsp那我们来继续吧，我们来第<b>三^</b>个灯谜，请过来吧。<br/>
-          mandarin pinyin: na4 wo3 men5 lai2 ji4 xu4 ba5, wo3 men5 lai2 di4 <b>san1^</b> ge5 deng1 mi2, qing3 guo4 lai2 ba5.
-          </td></span>
-        </tr>
-        <tr align="center">
-          <td>Speechs: </td>
-          <td><audio controls style="width: 300px;"><source src="samples/f22base2.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/f22ee2.wav" type="audio/wav"></audio></td>
-        </tr>
-      </tbody>
-    </table>
-
-    </div>
-
-    <br> </br>
-    <div>
-      <h3>Section II: Controllability Test</h3>
-      We also conduct a controllability test for EE-TTS to indicate the significance of emphasis control on different positions.
-      <h3> </h3>
-    <table>
-      <thead>
 
       <thead>
       <tbody>
         <tr align="center">
-          <td><b>Different emphasis postions:</b> </td>
-          <td>1) 你真的太帅了<br/>ni3 zhen1 de5 tai4 shuai4 le5.</td>
-          <td>2) <b>你^</b>真的太帅了<br/><b>ni3^</b> zhen1 de5 tai4 shuai4 le5.</td>
-          <td>3) 你<b>真^的^</b>太帅了<br/>ni3 <b>zhen1^ de5^</b> tai4 shuai4 le5.</td>
-          <td>4) 你真的<b>太^</b>帅了<br/>ni3 zhen1 de5 <b>tai4^</b> shuai4 le5.</td>
-          <td>5) 你真的太<b>帅^</b>了<br/>ni3 zhen1 de5 tai4 <b>shuai4^</b> le5.</td>
+          <td style="text-align: center"><em><b>&nbsp&nbsp&nbspDifferent emphasis postions:&nbsp &nbsp&nbsp &nbsp &nbsp &nbsp&nbsp</b> </em></td>
+          <td style="text-align: center"><em>1) 你真的太帅了<br/>ni3 zhen1 de5 tai4 shuai4 le5.</em></td>
+          <td style="text-align: center"><em>2) <b>你^</b>真的太帅了<br/><b>ni3^</b> zhen1 de5 tai4 shuai4 le5.</em></td>
+
         </tr>
         <tr></tr>
         <tr></tr>
         <tr></tr>
 
         <tr align="center">
-          <td>Speechs: </td>
-          <td><audio controls style="width: 300px;"><source src="samples/control0.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/control1.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/control2.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/control3.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/control4.wav" type="audio/wav"></audio></td>
+          <td> <br/> </td>
+          <td style="text-align: center"><audio controls style="width: 300px;"><source src="samples/control0.wav" type="audio/wav"></audio></td>
+          <td style="text-align: center"><audio controls style="width: 300px;"><source src="samples/control1.wav" type="audio/wav"></audio></td>
 
         </tr>
 
       </tbody>
     </table>
 
-    </div>
-    <br> </br>
+        <table>
+      <thead>
 
-    <div>
-      <h3>Section III: Ablation Studies</h3>
+      <thead>
+      <tbody>
+        <tr align="center">
+
+          <td style="text-align: center"><em>3) 你<b>真^的^</b>太帅了<br/>ni3 <b>zhen1^ de5^</b> tai4 shuai4 le5.</em></td>
+          <td style="text-align: center"><em>4) 你真的<b>太^</b>帅了<br/>ni3 zhen1 de5 <b>tai4^</b> shuai4 le5.</em></td>
+          <td style="text-align: center"><em>5) 你真的太<b>帅^</b>了<br/>ni3 zhen1 de5 tai4 <b>shuai4^</b> le5.</em></td>
+        </tr>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+
+        <tr align="center">
+          <td style="text-align: center"><audio controls style="width: 300px;"><source src="samples/control2.wav" type="audio/wav"></audio></td>
+          <td style="text-align: center"><audio controls style="width: 300px;"><source src="samples/control3.wav" type="audio/wav"></audio></td>
+          <td style="text-align: center"><audio controls style="width: 300px;"><source src="samples/control4.wav" type="audio/wav"></audio></td>
+
+        </tr>
+
+      </tbody>
+    </table>
+
+                <h2>Section III: Ablation Studies</h2>
       we give some emphasized speech of all experiments in ablation studies:
-      <h3> </h3>
+                </br>
+                </br>
+        <p><em>mandarin text: &nbsp &nbsp对面这打野强得有点过<b>分^</b>了，咱们可以先抓一下对面经济比较<b>低^</b>的. <br/>
+            mandarin pinyin: dui4 mian4 zhe4 da2 ye3 qiang2 de5 you2 dian3 guo4 <b>fen4^</b> le5, zan2 men5 ke2 yi3 xian1 zhua1 yi2 xia4 dui4 mian4 jing1 ji4 bi3 jiao4 <b>di1^</b> de5.</em></p>
     <table>
       <thead>
         <tr>
-          <th align="center">Methods: </th>
-          <th align="center">1) EE-TTS</th>
-          <th align="center">2) 1) with transformer encoder<br/>rather than transformer</th>
-          <th align="center">3) 2) without BERT</th>
-          <th align="center">4) 3) without Dependency Parsing</th>
-          <th align="center">5) 4) without Part-of-Speech</th>
-          <th align="center">6) 1) without unsupervised labels<br/> in pre-training</th>
+          <th style="text-align: center">1) EE-TTS</th>
+          <th style="text-align: center">2) 1) with transformer encoder<br/>rather than transformer</th>
+          <th style="text-align: center">3) 2) without BERT</th>
+
+        </tr>
+      <thead>
+      <tbody>
+        <tr></tr>
+        <tr></tr>
+        <tr></tr>
+        <tr align="center">
+          <td style="text-align: center"><audio controls style="width: 300px;"><source src="samples/0050_1.wav" type="audio/wav"></audio></td>
+          <td style="text-align: center"><audio controls style="width: 300px;"><source src="samples/0050_2.wav" type="audio/wav"></audio></td>
+          <td style="text-align: center"><audio controls style="width: 300px;"><source src="samples/0050_3.wav" type="audio/wav"></audio></td>
+
+        </tr>
+
+      </tbody>
+    </table>
+    <table>
+      <thead>
+        <tr>
+          <th style="text-align: center">4) 3) without Dependency Parsing</th>
+          <th style="text-align: center">5) 4) without Part-of-Speech</th>
+          <th style="text-align: center">6) 1) without unsupervised labels<br/> in pre-training</th>
 
 
         </tr>
@@ -159,19 +209,10 @@
         <tr></tr>
         <tr></tr>
         <tr></tr>
-        <tr>
-          <td colspan="7"><span>mandarin text: &nbsp &nbsp对面这打野强得有点过<b>分^</b>了，咱们可以先抓一下对面经济比较<b>低^</b>的. <br/>
-          mandarin pinyin: dui4 mian4 zhe4 da2 ye3 qiang2 de5 you2 dian3 guo4 <b>fen4^</b> le5, zan2 men5 ke2 yi3 xian1 zhua1 yi2 xia4 dui4 mian4 jing1 ji4 bi3 jiao4 <b>di1^</b> de5.
-          </td></span>
-        </tr>
         <tr align="center">
-          <td>Speechs:</td>
-          <td><audio controls style="width: 300px;"><source src="samples/0050_1.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/0050_2.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/0050_3.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/0050_4.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/0050_5.wav" type="audio/wav"></audio></td>
-          <td><audio controls style="width: 300px;"><source src="samples/0050_6.wav" type="audio/wav"></audio></td>
+            <td style="text-align: center"><audio controls style="width: 300px;"><source src="samples/0050_4.wav" type="audio/wav"></audio></td>
+          <td style="text-align: center"><audio controls style="width: 300px;"><source src="samples/0050_5.wav" type="audio/wav"></audio></td>
+          <td style="text-align: center"><audio controls style="width: 300px;"><source src="samples/0050_6.wav" type="audio/wav"></audio></td>
 
 
         </tr>
@@ -179,6 +220,65 @@
       </tbody>
     </table>
 
-    </div>
-  </body>
+
+
+			</section>
+		</article>
+	</main>
+
+
+
+
+</div>
+
+<script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-139981676-1', 'auto');
+	ga('send', 'pageview');
+</script>
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+         HTML: ["input/TeX","output/HTML-CSS"],
+         TeX: {
+                Macros: {
+                         bm: ["\\boldsymbol{#1}", 1],
+                         argmax: ["\\mathop{\\rm arg\\,max}\\limits"],
+                         argmin: ["\\mathop{\\rm arg\\,min}\\limits"]},
+                extensions: ["AMSmath.js","AMSsymbols.js"],
+                equationNumbers: { autoNumber: "AMS" } },
+         extensions: ["tex2jax.js"],
+         jax: ["input/TeX","output/HTML-CSS"],
+         tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                    processEscapes: true },
+         "HTML-CSS": { availableFonts: ["TeX"],
+                       linebreaks: { automatic: true } }
+     });
+ </script>
+
+ <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       tex2jax: {
+         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+       }
+     });
+ </script>
+
+ <script type="text/javascript" async
+   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+ </script>
+
+
+
+
+</body>
 </html>
